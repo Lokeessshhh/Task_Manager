@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.hero {
+  flex: 1.5;
+  background: var(--bg-subtle);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  border-right: 1px solid var(--border);
+}
+
+.heroTitle {
+  font-size: 8rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.quote {
+  font-family: 'Instrument Serif', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  max-width: 400px;
+}
+
+.formSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 360px;
+}
+
+.title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 3rem;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.field {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--accent);
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.toggleBtn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.submitBtn {
+  width: 100%;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 1rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.submitBtn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.switch {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.switch a {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    display: none;
+  }
+}
