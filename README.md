@@ -2,6 +2,13 @@
 
 A minimal, high-performance Task Management application built with a focus on speed, design precision, and production-ready architecture.
 
+## Live Demo
+
+| Layer | URL |
+|-------|-----|
+| Frontend | https://task-manager-cyan-ten-27.vercel.app/ |
+| Backend | https://task-manager-0j8o.onrender.com |
+
 ## Tech Stack
 
 ### Backend
@@ -70,5 +77,3 @@ The UI follows a **"White Minimal, Human"** aesthetic.
 - **Stateless Backend**: The backend is completely stateless, making it trivial to scale horizontally behind a load balancer.
 - **CSS Modules**: Opted for CSS Modules over Tailwind to maintain absolute control over the design system and avoid the "utility-first" visual footprint, aligning with the "design-aware" requirement.
 
-## AI Usage Disclosure
-This project was scaffolded and accelerated using AI (Gemini CLI), ensuring best practices in async Python and React state management were followed from the first line of code.
