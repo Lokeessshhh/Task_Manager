@@ -2,9 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid var(--border);
   background: var(--bg);
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .logo {
@@ -13,6 +19,37 @@
   font-style: italic;
   font-weight: 400;
   color: var(--text-primary);
+}
+
+.healthStatus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-subtle);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+.healthText {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.indicator.checking { background: #d1d5db; }
+.indicator.live { background: #10b981; box-shadow: 0 0 8px #10b981; }
+.indicator.waking { 
+  background: #f59e0b; 
+  animation: pulse 1s infinite;
 }
 
 .userSection {
