@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
+import HealthCheck from '../components/HealthCheck';
 import toast from 'react-hot-toast';
 import styles from './Login.module.css';
 
@@ -24,6 +25,9 @@ const Login = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.healthWrapper}>
+        <HealthCheck />
+      </div>
       <div className={styles.hero}>
         <h1 className={styles.heroTitle}>tasks.</h1>
         <p className={styles.quote}>"The secret of getting ahead is getting started."</p>

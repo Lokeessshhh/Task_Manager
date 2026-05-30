@@ -2,6 +2,14 @@
   display: flex;
   min-height: 100vh;
   background: var(--bg);
+  position: relative;
+}
+
+.healthWrapper {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
 }
 
 .hero {

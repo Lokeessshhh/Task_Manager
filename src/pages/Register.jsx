@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
+import HealthCheck from '../components/HealthCheck';
 import toast from 'react-hot-toast';
 import styles from './Register.module.css';
 
@@ -24,6 +25,9 @@ const Register = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.healthWrapper}>
+        <HealthCheck />
+      </div>
       <div className={styles.hero}>
         <h1 className={styles.heroTitle}>tasks.</h1>
         <p className={styles.quote}>"Productivity is never an accident. It is always the result of a commitment to excellence."</p>
